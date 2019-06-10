@@ -1,0 +1,39 @@
+---
+---
+
+{% include head.html %}
+
+<div class="wrapper">
+
+    <div class="container">
+
+    {% include header.html %}
+
+    <div class="postcontainer">
+    
+    {% for post in site.posts %}
+
+    
+     <div class="posttitle"><a href="{{post.url}}">{{post.title}}</a></div>
+    {% if post.subtitle %}<div class="subtitle">{{post.subtitle}}</div>{% endif %}
+
+    <div class="dateline">{{ post.date | date: "%B %-d, %Y" }}</div>
+
+    <p><a href="{{post.url}}">Read post</a></p>
+    
+    <hr>
+
+    {% endfor %}
+
+    </div>
+
+    </div>
+    {% include footer.html %}
+
+</div>
+
+{% include googleanalytics.html %}
+
+
+    
+    

@@ -1,0 +1,45 @@
+{% include head.html %}
+
+<div class="wrapper">
+
+    <div class="container">
+
+    {% include header.html %}
+
+    <div class="postcontainer">
+    <div class="posttitle">{{page.title}}</div>
+    {% if page.subtitle %}<div class="subtitle">{{page.subtitle}}</div>{% endif %}
+
+    <div class="dateline">{{ page.date | date: "%B %-d, %Y" }} by Tom Critchlow</div>
+
+    {{page.content}}
+
+    <hr>
+
+<div id="disqus_thread"></div>
+<script>
+
+    var disqus_config = function () {
+        this.page.url = "http://yesand.nyc"+"{{page.url}}";
+        this.page.identifier = "http://yesand.nyc"+"{{page.url}}";
+    };
+    
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//yesandnyc.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+
+    </div>
+    {% include footer.html %}
+
+</div>
+
+{% include googleanalytics.html %}
