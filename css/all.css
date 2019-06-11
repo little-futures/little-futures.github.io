@@ -22,3 +22,10 @@ h1, h2, h3 {
     vertical-align: middle;
     text-transform: uppercase;
 }
+
+lfmenu{
+    width:100%;
+    background-color:#9fc5e8ff;
+    height:100vw;
+    position:fixed;
+}
