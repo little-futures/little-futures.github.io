@@ -11,8 +11,8 @@ h1, h2, h3 {
 }
 
 .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after{
-    height:3px;
-    width:35px;
+    height:2px;
+    width:30px;
 }
 
 .hamburger-label{
