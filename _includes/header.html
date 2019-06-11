@@ -10,12 +10,18 @@
             <span class="hamburger-label">Menu</span>
           </button>
     </div>
+    <div class="hidden lfmenu">
+        About us
+        Blog
+
+    </div>
 </div>
 
 <script>
     var $hamburger = $(".hamburger");
     $hamburger.on("click", function(e) {
       $hamburger.toggleClass("is-active");
+      $(".lfmenu").toggle();
       // Do something else, like open/close menu
     });
   </script>
