@@ -14,3 +14,11 @@ h1, h2, h3 {
     height:3px;
     width:35px;
 }
+
+.hamburger-label{
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
