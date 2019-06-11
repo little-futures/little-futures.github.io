@@ -28,4 +28,6 @@ h1, h2, h3 {
     background-color:#9fc5e8ff;
     height:100vw;
     position:fixed;
+    top:0px;
+    left:0px;
 }
