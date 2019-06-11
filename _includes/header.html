@@ -3,15 +3,21 @@
     <h1>Little Futures</h1>
     <h2>A near futures explorer's club</h2>
     <div class="fr">
-        <div class="hamburger-wrap">
-            <button class="hamburger hamburger--collapse hamburger--accessible js-hamburger is-active" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-              <span class="hamburger-label">Menu</span>
-            </button>
-          </div>
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+            <span class="hamburger-label">Menu</span>
+          </button>
     </div>
 </div>
+
+<script>
+    var $hamburger = $(".hamburger");
+    $hamburger.on("click", function(e) {
+      $hamburger.toggleClass("is-active");
+      // Do something else, like open/close menu
+    });
+  </script>
 
 </div>
