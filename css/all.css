@@ -33,6 +33,10 @@ h1, h2, h3 {
     left:0px;
 }
 
+p{
+    line-height:1.6em !important;
+}
+
 p a, ul a {
     text-decoration: none;
     color: #212121;
