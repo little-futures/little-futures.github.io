@@ -14,7 +14,9 @@ h1, h2, h3 {
     font-family:"Roboto Mono"
 }
 
-
+.abel{
+    font-family:"abel";
+}
 
 .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after{
     height:2px;
