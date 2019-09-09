@@ -78,13 +78,13 @@ p{
     line-height:1.6em !important;
 }
 
-p a, ul a {
+p a, ul a, .ctabox a{
     text-decoration: none;
     color: #212121;
     box-shadow: inset 0 -6px 0 rgba(0,0,255,0.4);
     transition: ease-in .05s border-bottom
 }
 
-p a:hover, ul a:hover{
+p a:hover, ul a:hover, .ctabox a:hover{
     box-shadow: inset 0 -24px 0 rgba(0,0,255,0.4);
 }
