@@ -26,6 +26,11 @@ h1, h2, h3 {
     font-family:"abel";
     border:1px solid black;
     text-align:center;
+    background-color:white;
+    position:relative;
+    float:right;
+    margin-top:-20px;
+    right:20px;
 }
 
 .logo div{
