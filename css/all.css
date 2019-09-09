@@ -18,6 +18,10 @@ h1, h2, h3 {
     font-family:"abel";
 }
 
+.palatino{
+    font-family:"palatino";
+}
+
 .logo{
     display:block;
     width:75px;
