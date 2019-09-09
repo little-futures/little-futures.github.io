@@ -45,8 +45,10 @@ h1, h2, h3 {
 }
 
 .ctabox{
-    margin-top:-50px;
+    margin-top:-25px;
     background-color:white;
+    height:50px;
+    line-height:50px;
 }
 
 
