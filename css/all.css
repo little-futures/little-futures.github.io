@@ -44,6 +44,11 @@ h1, h2, h3 {
     font-size:25px;
 }
 
+.ctabox{
+    margin-top:-50px;
+    background-color:white;
+}
+
 
 
 .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after{
