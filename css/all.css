@@ -80,7 +80,7 @@ p{
 
 p a, ul a, .ctabox a{
     text-decoration: underline;
-    color: #212121;
+    color: blue;
 }
 
 /* p a, ul a, .ctabox a{
