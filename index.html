@@ -24,7 +24,23 @@
 
 </div>
     
-<div class="ba w-75 center tc shadow-5 ctabox mb5 palatino"><a href="https://buttondown.email/littlefutures">Sign up here</a></div>
+<div class="ba w-75 center tc shadow-5 ctabox mb5 palatino f5">
+    <form
+  action="https://buttondown.email/api/emails/embed-subscribe/littlefutures"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/littlefutures', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label><br>
+  <input type="email" name="email" id="bd-email">
+  <input type="hidden" value="1" name="embed"></input>
+  <input type="submit" value="Subscribe"></input>
+  <p>
+    <a href="https://buttondown.email" target="_blank">Powered by Buttondown.</a>
+  </p>
+</form>
+</div>
 
 
 </div>
