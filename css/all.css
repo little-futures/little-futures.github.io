@@ -49,7 +49,7 @@ h1, h2, h3 {
     background-color:white;
 }
 
-.ctabox button{
+.ctabox input[type="button"]{
     display:block;
     border:none;
     background-color:black;
