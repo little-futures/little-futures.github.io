@@ -49,6 +49,13 @@ h1, h2, h3 {
     background-color:white;
 }
 
+.ctabox button{
+    display:block;
+    border:none;
+    background-color:black;
+    color:white;
+}
+
 
 
 .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after{
