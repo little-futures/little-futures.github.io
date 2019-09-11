@@ -5,7 +5,7 @@ title: LF01 - Business Time
 
 ![](https://buttondown.s3.us-west-2.amazonaws.com/images/fdb4e00e-54ad-4064-a90a-881e2aca3d8b.png)
 
-<div class="caption"><a href="https://www.loc.gov/item/2017741282/">Watch repairman, Waco, Texas - 1939</a></div>
+<div class="caption">image: <a href="https://www.loc.gov/item/2017741282/">Watch repairman, Waco, Texas - 1939</a></div>
 
 *"The thick ticking of the tin clock stopped" - Bernard Malamud*
 
