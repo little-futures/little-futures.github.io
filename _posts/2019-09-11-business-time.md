@@ -6,12 +6,6 @@ title: LF01 - Business Time
 ![](https://buttondown.s3.us-west-2.amazonaws.com/images/fdb4e00e-54ad-4064-a90a-881e2aca3d8b.png)
 
 <div class="caption"><a href="https://www.loc.gov/item/2017741282/">Watch repairman, Waco, Texas - 1939</a></div>
- 
-Hi. Welcome to  Little Futures. This is an experiment from Brian and Tom to curate, collect and shine a light on near-term futures, what we call “**arm’s length futures**.” We’ve both worked in business, strategy, startups, creative and consulting and are interested in exploring the notion of change, org design, research and strategy in a modern, networked corporation.
-
-Each week we’ll collect some things around a theme we're interested in. This week, business time...
-
-# Business Time
 
 *"The thick ticking of the tin clock stopped" - Bernard Malamud*
 
