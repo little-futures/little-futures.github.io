@@ -63,4 +63,10 @@ p a, ul a, .ctabox a{
 
 .postcontainer blockquote{
     border-left:4px solid #0000ff;
+    padding-left:10px;
+    margin-left:10px;
 }
+
+.highlight{
+    background-color:#CFE2F3
+    }
