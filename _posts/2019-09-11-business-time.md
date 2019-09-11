@@ -101,11 +101,11 @@ But at the other end of the spectrum, the speed of the feed can be a thing to le
 
 [Twitter thread from @vgr](https://twitter.com/vgr/status/1125119314611171328)
 
-https://twitter.com/vgr/status/1125119314611171328
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A megatrend hypothesis inspired by several microtrend that I think are related: <br><br>a) waldenponding<br> <br>b) rise of heavy duty information management methods like <a href="https://twitter.com/fortelabs?ref_src=twsrc%5Etfw">@fortelabs</a> BASB (build a second brain)<br><br>c) conversational media eating authorial media<br><br>d) &quot;hivebrain&quot; jokes/references</p>&mdash; Venkatesh Rao (@vgr) <a href="https://twitter.com/vgr/status/1125119314611171328?ref_src=twsrc%5Etfw">May 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 And...
 
-https://twitter.com/vgr/status/1125121495112359936
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">What those of us who are here are doing is making a deal with the devil (or an angel): in return for being 1-2 years ahead of curve, we play 2nd brain to a shared first brain. We&#39;ve ceded control of executive attention not to evil companies, but... an emergent oracular brain</p>&mdash; Venkatesh Rao (@vgr) <a href="https://twitter.com/vgr/status/1125121495112359936?ref_src=twsrc%5Etfw">May 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Careful. Once you step into the feed you might come back out changed...
 
