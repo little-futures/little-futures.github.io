@@ -33,7 +33,7 @@ h1, h2, h3 {
     right:20px;
 }
 
-.headerbox logo{
+.headerbox .logo{
     margin-top:0px;
     float:left;
     right:0px;
