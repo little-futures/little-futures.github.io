@@ -33,18 +33,24 @@ h1, h2, h3 {
     right:20px;
 }
 
-.headerbox .logo{
-    margin-top:10px;
-    float:left;
-    right:0px;
-}
-
 .logo div{
     display:inline-block;
     vertical-align: middle;
     line-height:75px;
     font-size:25px;
 }
+
+.headerbox .logo{
+    margin-top:10px;
+    float:left;
+    right:0px;
+}
+
+.headerbox a{
+    color:black;
+}
+
+
 
 .ctabox{
     margin-top:-25px;
