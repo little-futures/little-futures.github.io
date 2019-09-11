@@ -1,45 +1,58 @@
 {% include head.html %}
 
-<div class="wrapper">
+{% include googleanalytics.html %}
 
-    <div class="container">
 
-    {% include header.html %}
+<div class="mw8 center lh-copy f4 postcontainer ph3 ph0-l" role="article">
+  
+    {% include blogchain-nav-top.html %}
 
-    <div class="postcontainer">
-    <div class="posttitle">{{page.title}}</div>
-    {% if page.subtitle %}<div class="subtitle">{{page.subtitle}}</div>{% endif %}
+  <div class="pt4 pt5-l w-two-thirds-ns">
+  
+      <h1 class="f2 f1-l fw8 lh-solid mv1 posttitle">{{page.title}}</h1>
 
-    <div class="dateline">{{ page.date | date: "%B %-d, %Y" }} by Tom Critchlow</div>
+    {% if page.subtitle %}
+    <h2 class="f3 fw3 lh-copy mt1 subtitle">{{page.subtitle}}</h2>
+      {% endif %}
 
-    {{page.content}}
+    {% if page.date %}
+    <div class="f6 f6-s black-50 pv3">{{ page.date | date: "%B %-d, %Y" }}</div>
+      {% endif %}
+  </div>
+  
+  
+  <div class="w-two-thirds-ns">
+  
 
-    <hr>
 
-<div id="disqus_thread"></div>
-<script>
+  {{content}}
 
-    var disqus_config = function () {
-        this.page.url = "http://yesand.nyc"+"{{page.url}}";
-        this.page.identifier = "http://yesand.nyc"+"{{page.url}}";
-    };
-    
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        
-        s.src = '//yesandnyc.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  <hr class="w3 mv5">
 
+  <div class="Previous-next f6 cf pb4">
+    {% if page.previous.url %}
+    <div class="fl w-40">
+    <span class="ttu tracked">⇜ PREVIOUS</span><br>
+      <a class="previous" href="{{page.previous.url}}">{{page.previous.title}}</a>
     </div>
-
+    {% endif %}
+    {% if page.next.url %}
+    <div class="fr w-40 tr">
+    <span class="ttu tracked">NEXT ⇝</span><br>
+      <a class="next" href="{{page.next.url}}">{{page.next.title}}</a>
     </div>
-    {% include footer.html %}
+    {% endif %}
+  </div>
 
+  {% endif %}
+
+<div class="f5 i">
+  Litlte futures - subscribe here
 </div>
 
-{% include googleanalytics.html %}
+
+</div>
+</div>
+
+
+{% include footer.html %}
