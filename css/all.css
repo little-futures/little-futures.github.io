@@ -70,3 +70,11 @@ p a, ul a, .ctabox a{
 .highlight{
     background-color:#CFE2F3
     }
+
+.caption{
+    padding-left:25%;
+    margin:0px;
+    float:right;
+    line-height:12px;
+    font-size:12px;
+}
