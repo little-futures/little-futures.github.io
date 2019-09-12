@@ -52,7 +52,7 @@ And he drops in this lovely pace layers image to demonstrate the interplay of sp
  ![](https://buttondown.s3.us-west-2.amazonaws.com/images/1fd28ccb-5ca0-4f7c-ae33-874663cc180d.png) 
  
 ---
- 
+<div class="ba pa2"> 
 ## 02 - Week Notes Peg Narrative Time to Linear Time
 
 [A pre-history of week notes](https://medium.com/job-garden/a-pre-history-of-weeknotes-plus-why-i-write-them-and-perhaps-why-you-should-too-week-16-31a4a5cbf7b0) by Matt Webb
@@ -62,7 +62,7 @@ And he drops in this lovely pace layers image to demonstrate the interplay of sp
 Week Notes are a crossing of the streams between narrative time and clock time - they help you connect the dots between what happened and what you were feeling.
 
 They're also a wonderful way to create a network around what you're working on. We love week notes here at Little Futures.
-
+</div>
 ---
 
 ## 03 - The Banality of Time Tracking & Productivity
