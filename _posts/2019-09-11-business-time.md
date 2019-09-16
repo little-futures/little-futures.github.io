@@ -7,6 +7,8 @@ title: LF01 - Business Time
 
 <div class="caption">image: <a href="https://www.loc.gov/item/2017741282/">Watch repairman, Waco, Texas - 1939</a></div>
 
+## Every Company Has a Clock
+
 *"The thick ticking of the tin clock stopped" - Bernard Malamud*
 
 Despite what you might think there are very few objective measures of time - instead mostly we live in narrative time. We measure time not by clock ticks but by the cadence of emotional moments.
