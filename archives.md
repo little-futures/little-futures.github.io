@@ -3,9 +3,8 @@ layout: page
 title: Latest Posts
 ---
 
-{% for post in site.posts  %}
-
 <ul>
+{% for post in site.posts  %}
 
 {% if post.draft == true %}
 {% else %}
