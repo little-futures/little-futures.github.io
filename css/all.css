@@ -27,7 +27,8 @@ h1, h2, h3 {
     width:75px;
     height:75px;
     box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 );
-    font-family:"abel";
+    font-family:roboto mono;
+    font-weight:200;
     border:1px solid black;
     text-align:center;
     background-color:white;
