@@ -18,6 +18,10 @@ h1, h2, h3 {
     font-family:"palatino";
 }
 
+.robotomono{
+    font-family:"Roboto Mono"
+}
+
 .logo{
     display:block;
     width:75px;
