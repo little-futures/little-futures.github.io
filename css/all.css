@@ -73,7 +73,7 @@ p a, ul a, .ctabox a, .caption a{
 }
 
 .postcontainer blockquote{
-    border-left:4px solid #0000ff;
+    border-left:1px solid #0000ff;
     padding-left:10px;
     margin-left:10px;
 }
