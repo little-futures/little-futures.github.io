@@ -77,6 +77,7 @@ p a, ul a, .ctabox a, .caption a{
     border-left:1px solid #0000ff;
     padding-left:10px;
     margin-left:10px;
+    font-style:italic;
 }
 
 .highlight{
