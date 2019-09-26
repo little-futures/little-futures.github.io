@@ -68,10 +68,6 @@ h1, h2, h3 {
     color:white;
 }*/
 
-p{
-    line-height:1.6em !important;
-}
-
 p a, ul a, .ctabox a, .caption a{
     text-decoration: underline;
     color: blue;
