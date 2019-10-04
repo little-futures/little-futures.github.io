@@ -94,3 +94,7 @@ p a, ul a, .ctabox a, .caption a{
     font-size:12px;
     font-family:"abel";
 }
+
+.postcontainer img:first-of-type{
+    max-width:500px;
+}
