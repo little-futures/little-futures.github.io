@@ -96,5 +96,7 @@ p a, ul a, .ctabox a, .caption a{
 }
 
 .postcontainer img:first-of-type{
+    display:block;
+    margin:auto;
     max-width:500px;
 }
