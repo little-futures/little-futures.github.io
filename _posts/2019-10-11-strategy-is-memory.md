@@ -17,7 +17,7 @@ Why is that? One reason is that strategy is often set by one group of people, bu
 
 The problem is memory is fickle ([our brains rewrite our memories to situate the present in the past](https://www.npr.org/sections/health-shots/2014/02/04/271527934/our-brains-rewrite-our-memories-putting-present-in-the-past)), memory is subjective ([the Rashoman Effect](https://www.cjc-online.ca/index.php/journal/article/view/3068/3209)), and memory is held by people.
 
-When careers and job tenures were longer this worked. An organization's memory could live in its people and reliably remain inside its operations.
+When job tenures were longer this worked. An organization's memory could live in its people and reliably remain inside its operations.
 
 But as people and organizations form looser affiliations over shorter time-horizons, we need to find new ways to embed, transfer and recall the memory of where we're going, how we're going to get there, and why we made decisions.
 
