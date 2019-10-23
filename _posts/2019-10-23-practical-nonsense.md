@@ -155,4 +155,6 @@ And finally time for a re-read of the nonsense [Jabberwocky poem by Lewis Carrol
 >
 >The frumious Bandersnatch!”
 
+---
+
 This week, **Tom** is musing on brands as unknowable hyperobjects (and also knee deep in media business P&Ls) & **Brian** is knee-deep in prepping for the Tachyon III cohort.
