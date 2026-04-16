@@ -1,17 +1,36 @@
-# Quartz v4
+# Little Futures
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+A shared digital garden by Tom Critchlow and Brian Dell, published at [little-futures.github.io](https://little-futures.github.io).
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+## How it works
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+- Write notes in [Obsidian](https://obsidian.md)
+- Push to this repo
+- [Quartz](https://quartz.jzhao.xyz) builds and deploys via GitHub Actions
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## Content structure
 
-## Sponsors
+```
+content/
+├── notes/          # Shared notes (frontmatter specifies author)
+├── pages/          # Static pages (about, etc.)
+├── tom/            # Tom's personal space
+│   ├── notes/
+│   ├── links/
+│   └── music/
+└── brian/          # Brian's personal space
+    ├── notes/
+    ├── links/
+    └── music/
+```
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+## Local development
+
+```bash
+npm i
+npx quartz build --serve
+```
+
+## Publishing
+
+Push to the `v4` branch. GitHub Actions will build and deploy automatically.
