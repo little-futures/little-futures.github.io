@@ -15,4 +15,4 @@ A shared space for notes, ideas, and explorations by [Tom](/tom) and [Brian](/br
 
 ---
 
-*This site is published from [Obsidian](https://obsidian.md) using [Quartz](https://quartz.jzhao.xyz).*
+_This site is published from [Obsidian](https://obsidian.md) using [Quartz](https://quartz.jzhao.xyz)._
