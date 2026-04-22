@@ -11,5 +11,6 @@ private/
 replit.nix
 .env
 .env.*
+!.env.example
 .claude/settings.local.json
 .claude/last-brief*
