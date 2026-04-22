@@ -33,4 +33,4 @@ npx quartz build --serve
 
 ## Publishing
 
-Push to the `v4` branch. GitHub Actions will build and deploy automatically.
+Push to the `master` branch. GitHub Actions will build and deploy automatically.
