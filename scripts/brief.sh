@@ -26,7 +26,17 @@ for arg in "$@"; do
 done
 
 if [[ -f .env ]]; then
-  set -a; source .env; set +a
+  # Parse KEY=VALUE lines rather than sourcing (so .env is config, not code).
+  while IFS= read -r line || [[ -n "$line" ]]; do
+    [[ -z "${line// }" || "${line#"${line%%[![:space:]]*}"}" == \#* ]] && continue
+    if [[ "$line" =~ ^[[:space:]]*([A-Za-z_][A-Za-z0-9_]*)=(.*)$ ]]; then
+      key="${BASH_REMATCH[1]}"
+      value="${BASH_REMATCH[2]}"
+      [[ "$value" =~ ^\"(.*)\"$ ]] && value="${BASH_REMATCH[1]}"
+      [[ "$value" =~ ^\'(.*)\'$ ]] && value="${BASH_REMATCH[1]}"
+      export "$key=$value"
+    fi
+  done < .env
 fi
 
 if [[ $DRY_RUN -eq 0 && -z "${DISCORD_BRIEFING_WEBHOOK:-}" ]]; then
@@ -165,7 +175,12 @@ PAYLOAD=$(jq -n \
   --arg username "Little Futures Bot" \
   --arg content "$HEADER" \
   --argjson embeds "$EMBEDS" \
-  '{username:$username, content:$content, embeds: ($embeds[0:10])}')
+  '{
+    username: $username,
+    content: $content,
+    embeds: ($embeds[0:10]),
+    allowed_mentions: { parse: [] }
+  }')
 
 if [[ $DRY_RUN -eq 1 ]]; then
   echo "--- DRY RUN ---"
@@ -173,14 +188,17 @@ if [[ $DRY_RUN -eq 1 ]]; then
   exit 0
 fi
 
-HTTP=$(curl -sS -o /tmp/brief-resp.txt -w "%{http_code}" \
+RESP=$(mktemp)
+trap 'rm -f "$RESP"' EXIT
+
+HTTP=$(curl -sS -o "$RESP" -w "%{http_code}" \
   -H "Content-Type: application/json" \
   -X POST "$DISCORD_BRIEFING_WEBHOOK" \
   --data "$PAYLOAD")
 
 if [[ "$HTTP" != "204" ]]; then
   echo "Discord returned HTTP $HTTP" >&2
-  cat /tmp/brief-resp.txt >&2
+  cat "$RESP" >&2
   exit 1
 fi
 
