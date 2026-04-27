@@ -25,4 +25,5 @@ jobs:
       - name: Post brief to Discord
         env:
           DISCORD_BRIEFING_WEBHOOK: ${{ secrets.DISCORD_BRIEFING_WEBHOOK }}
-        run: ./scripts/brief.sh "${{ inputs.window || '7d' }}"
+          WINDOW: ${{ inputs.window || '7d' }}
+        run: ./scripts/brief.sh "$WINDOW"
