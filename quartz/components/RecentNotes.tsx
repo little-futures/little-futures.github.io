@@ -42,22 +42,36 @@ export default ((userOpts?: Partial<Options>) => {
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
             const tags = page.frontmatter?.tags ?? []
+            
+            let authorClass = "message-clipping"
+            if (page.slug?.startsWith("notes/brian")) {
+              authorClass = "message-brian"
+            } else if (page.slug?.startsWith("notes/tom")) {
+              authorClass = "message-tom"
+            }
 
             return (
-              <li class="recent-li">
-                <div class="section">
-                  <div class="desc">
+              <li class={classNames("recent-li", authorClass)}>
+                <div class="message-bubble">
+                  <div class="message-header">
+                    {page.dates && (
+                      <span class="meta-date">
+                        <Date date={getDate(cfg, page)!} locale={cfg.locale} />
+                      </span>
+                    )}
                     <h3>
                       <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
                         {title}
                       </a>
                     </h3>
                   </div>
-                  {page.dates && (
-                    <p class="meta">
-                      <Date date={getDate(cfg, page)!} locale={cfg.locale} />
+                  
+                  {page.description && (
+                    <p class="message-excerpt">
+                      {page.description}
                     </p>
                   )}
+
                   {opts.showTags && (
                     <ul class="tags">
                       {tags.map((tag) => (
@@ -72,6 +86,8 @@ export default ((userOpts?: Partial<Options>) => {
                       ))}
                     </ul>
                   )}
+                  
+                  <a href={resolveRelative(fileData.slug!, page.slug!)} class="read-more">Read full note →</a>
                 </div>
               </li>
             )

@@ -1,23 +1,120 @@
 .recent-notes {
   & > h3 {
-    margin: 0.5rem 0 0 0;
-    font-size: 1rem;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--gray);
   }
 
   & > ul.recent-ul {
     list-style: none;
     margin-top: 1rem;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 
     & > li {
-      margin: 1rem 0;
-      .section > .desc > h3 > a {
-        background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &.message-brian {
+        align-items: flex-start;
+        .message-bubble {
+          background-color: #0b93f6;
+          color: white;
+          border-bottom-left-radius: 4px;
+        }
+        .internal { color: white; text-decoration-color: rgba(255,255,255,0.5); }
+        .meta-date { color: rgba(255,255,255,0.8); }
+        .read-more { color: white; opacity: 0.8; }
       }
 
-      .section > .meta {
-        margin: 0 0 0.5rem 0;
-        opacity: 0.6;
+      &.message-tom {
+        align-items: flex-end;
+        .message-bubble {
+          background-color: #4cd964;
+          color: white;
+          border-bottom-right-radius: 4px;
+        }
+        .internal { color: white; text-decoration-color: rgba(255,255,255,0.5); }
+        .meta-date { color: rgba(255,255,255,0.8); }
+        .read-more { color: white; opacity: 0.8; }
+      }
+
+      &.message-clipping {
+        align-items: center;
+        .message-bubble {
+          background-color: var(--lightgray);
+          color: var(--darkgray);
+          border-radius: 18px;
+          text-align: center;
+        }
+        .internal { color: var(--darkgray); }
+        .meta-date { color: var(--gray); }
+        .read-more { color: var(--secondary); }
+      }
+
+      .message-bubble {
+        max-width: 80%;
+        padding: 1rem 1.25rem;
+        border-radius: 18px;
+        position: relative;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+
+        .message-header {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+          margin-bottom: 0.5rem;
+
+          h3 {
+            margin: 0;
+            font-size: 1.1rem;
+          }
+          
+          .meta-date {
+            font-size: 0.8rem;
+          }
+        }
+
+        .message-excerpt {
+          margin: 0 0 1rem 0;
+          font-size: 0.95rem;
+          line-height: 1.4;
+        }
+
+        .tags {
+          margin: 0 0 1rem 0;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          
+          li {
+            margin: 0;
+            
+            a {
+              background: rgba(0,0,0,0.1);
+              padding: 0.1rem 0.5rem;
+              border-radius: 12px;
+              font-size: 0.8rem;
+              text-decoration: none;
+            }
+          }
+        }
+
+        .read-more {
+          font-size: 0.9rem;
+          text-decoration: underline;
+          display: inline-block;
+          margin-top: 0.5rem;
+          &:hover {
+            opacity: 1;
+          }
+        }
       }
     }
   }
