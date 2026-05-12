@@ -18,12 +18,12 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
-      fontOrigin: "googleFonts",
-      cdnCaching: true,
+      fontOrigin: "local",
+      cdnCaching: false,
       typography: {
-        header: "Inter",
-        body: "Inter",
-        code: "IBM Plex Mono",
+        header: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+        body: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+        code: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
       },
       colors: {
         lightMode: {

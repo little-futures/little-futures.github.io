@@ -1,3 +1,38 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Polished layout adjustments
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  margin-bottom: 2rem;
+  .page-title {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    a { color: var(--dark); }
+  }
+}
+
+// Homepage specific polish
+.center {
+  article {
+    & > h1:first-of-type {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-top: 2rem;
+    }
+    
+    & > p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--darkgray);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+  }
+}
