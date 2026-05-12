@@ -71,6 +71,10 @@
         box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         line-height: 1.5;
 
+        @media (max-width: 600px) {
+          max-width: 90%;
+        }
+
         .message-header {
           display: flex;
           flex-direction: column;

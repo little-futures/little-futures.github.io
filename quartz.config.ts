@@ -18,12 +18,12 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
-      fontOrigin: "local",
-      cdnCaching: false,
+      fontOrigin: "googleFonts",
+      cdnCaching: true,
       typography: {
-        header: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-        body: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-        code: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+        header: "Libre Franklin",
+        body: "Libre Franklin",
+        code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
@@ -86,8 +86,8 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
-      // Plugin.CustomOgImages(),
+      // Re-enabled since Google Fonts work with Satori
+      Plugin.CustomOgImages(),
     ],
   },
 }
