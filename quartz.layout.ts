@@ -30,7 +30,7 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.RecentNotes({
         title: "Stream",
         limit: 15,
-        filter: (f) => f.slug !== "index",
+        filter: (f) => f.slug !== "index" && !f.slug?.startsWith("clippings/"),
       }),
       condition: (page) => page.fileData.slug === "index",
     }),
